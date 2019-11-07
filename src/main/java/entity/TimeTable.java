@@ -30,6 +30,13 @@ public class TimeTable {
                         new File("src/main/java/Data/cities.txt")
                 )
         );
+        String city;
+        List<String> cities = new ArrayList<>();
+        while (true) {
+            city = br.readLine();
+            if (city == null) break;
+            cities.add(city);
+        }
 
         // read the cities from file
         // create the timetable
