@@ -6,6 +6,8 @@ import controller.TimetableController;
 import io.Command;
 import io.Parser;
 
+import java.io.IOException;
+
 public class Core {
 
   private final Console console;
@@ -26,7 +28,7 @@ public class Core {
     this.mainController = new MainController();
   }
 
-  public void run() {
+  public void run() throws IOException {
     if (!database.isExisted()) {
       database.createInitialData();
     }
