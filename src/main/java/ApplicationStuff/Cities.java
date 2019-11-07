@@ -39,7 +39,7 @@ public class Cities implements Iterable<String>{
   public void create() {
     try (
         BufferedWriter bw =
-            new BufferedWriter(new FileWriter(new File("src/main/java/lesson12/step/data/cities.txt")));
+            new BufferedWriter(new FileWriter(new File("src/main/java/Data/cities.txt")))
         ) {
       cities.forEach(c -> {
         try {
